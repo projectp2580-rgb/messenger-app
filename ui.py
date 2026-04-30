@@ -28,9 +28,9 @@ import streamlit as st
 from streamlit.components.v1 import html as components_html
 from streamlit_autorefresh import st_autorefresh
 
-import crypto
+from Crypto import Random
 from chat import ChatService, list_chats
-from crypto import Keyring
+from Crypto.PublicKey import RSA
 from broadcasts import BroadcastStore
 from feature_requests import (
     STATUS_OPEN,
